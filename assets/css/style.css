@@ -2286,3 +2286,89 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+
+.cart-page{
+  margin: 80px auto;
+  
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-info{
+  direction: flex;
+  flex-wrap: wrap;
+}
+th{
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background: #00c2cb;
+  font-weight:normal;
+}
+td{
+  padding: 10px 5px;
+  
+}
+td input{
+  width: 40px;
+  height: 30px;
+  padding: 5PX;
+}
+td a{
+  color: #00c2cb;
+  font-size: 12px;
+}
+td img{
+  width: 80px;
+  height: 80px;
+  margin-right:10px; 
+}
+.total-price{
+  display: flex;
+  justify-content: flex-end;
+  
+}
+.total-price table{
+  border-top: 3px solid #00c2cb;
+  width: 100%;
+  max-width: 520px;
+  
+}
+td:last-child{
+  text-align: right;
+}
+th:last-child{
+  text-align: right;
+}
+
+/*media queryfor less than 600 screen size */
+@media only screen and (max-width:800px){
+  .row{
+      text-align: center;
+      
+  }
+  
+  .col-2, .col-3, .col-4{
+      flex-basis: 100%;
+  }
+  
+  .single-product .row{
+      text-align: left;
+      
+  }   
+  
+  .single-product .col-2{
+      padding: 20px 0;
+  }
+  .single-product h1{
+      font-size: 26px;
+      line-height: 32px;
+  }
+  .cart-info p{
+      display: none;
+      
+  }
+}
